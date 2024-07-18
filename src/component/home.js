@@ -77,7 +77,7 @@ const Home = () => {
                     onChange={handleFirstNameChange}
                     className="p-1"
                 />
-                 
+
                 <input
                     type="text"
                     placeholder="DESCRIPTION"
@@ -85,7 +85,7 @@ const Home = () => {
                     onChange={handleLastNameChange}
                     className="p-1"
                 />
-                 
+
                 <Button variant="primary" onClick={handleInputValue} className="add">
                     {editIndex === -1 ? "ADD TODO" : "Update"}
                 </Button>
@@ -109,8 +109,8 @@ const Home = () => {
                                     <h5>NAME: {item.firstName}</h5>
                                     <h5>DESCRIPTION: {item.lastName}</h5>
                                     <h5>STATUS:<span id="delete">{item.status}</span></h5>
-                                    <Button variant="warning" id="edit"onClick={() => handleEdit(index)}>Edit</Button>
-                                    <Button variant="danger"id="delete" onClick={() => DeleteItem(index)}>Delete</Button>
+                                    <Button variant="warning" id="edit" onClick={() => handleEdit(index)}>Edit</Button>
+                                    <Button variant="danger" id="delete" onClick={() => DeleteItem(index)}>Delete</Button>
                                 </div>
                             ))}
                         </div>
